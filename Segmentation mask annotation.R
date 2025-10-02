@@ -50,19 +50,6 @@ hist_image_CD45_2 <- matrix(hist_CD45_2$counts, nrow = length(hist_CD45_2$counts
 threshold_CD45_1_value <- 1000
 threshold_CD45_2_value <- 1000
 
-# Apply Otsu's method to determine thresholds
-#threshold_CD45_1 <- threshold(hist_image_CD45_1)
-#threshold_CD45_2 <- threshold(hist_image_CD45_2)
-
-#get_threshold_value <- function (threshold, hist_vector) {
-#  threshold_index <- which(threshold == TRUE) [1]
-#  return(threshold_index)
-#}
-
-#threshold_CD45_1_value <- get_threshold_value(threshold_CD45_1, hist_vector_CD45_1)
-
-#threshold_CD45_2_value <- quantile(merged_props$mean_intensity_CD45_2, probs = 0.75, na.rm=TRUE) 
-
 # Define your annotation logic with the intensity thresholds
 cell_annotation <- function (mean_intensity_CD45_1, mean_intensity_CD45_2) {
   if (mean_intensity_CD45_1 >= threshold_CD45_1_value & mean_intensity_CD45_2 >= threshold_CD45_2_value)
