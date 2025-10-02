@@ -1,1 +1,1 @@
-This repository include command line and R scripts for single cell segmentation analysis in MZ and follicular localization for competitive transfer adoptive transfer. 
+This repository include command line and R scripts for single cell segmentation image analysis used in MZ and follicular localization of donor B cells in competitive transfer adoptive transfers. 
